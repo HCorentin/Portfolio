@@ -1,0 +1,23 @@
+{
+  "name": "w-web-502-lil-2-1-portfolio-corentin.hanscotte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechWebAcademiePromo2023/W-WEB-502-LIL-2-1-Portfolio-corentin.hanscotte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechWebAcademiePromo2023/W-WEB-502-LIL-2-1-Portfolio-corentin.hanscotte/issues"
+  },
+  "homepage": "https://github.com/EpitechWebAcademiePromo2023/W-WEB-502-LIL-2-1-Portfolio-corentin.hanscotte#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

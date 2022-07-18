@@ -1,0 +1,88 @@
+
+body {
+    height: 100vh;
+    font-family: Inter, sans-serif;
+}
+
+#presentation__titre {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animated-text 4s steps(29, end) 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 472px;
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: black;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.projets__screens {
+    display: flex;
+    min-width: 600px;
+    max-width: 900px;
+    height: 400px;
+    margin: 4rem auto;
+}
+
+.image {
+    min-width: 60px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    overflow: hidden;
+    /*position: relative;*/
+}
+
+.image.active {
+    flex-grow: 100;
+    max-width: 600px;
+    margin: 0;
+    border-radius: 7px;
+    background-size: auto 100%;
+}
+
+.image:not(.active) {
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.text-container {
+    width: 100%;
+    height: 400px;
+    padding: 2rem;
+    visibility: hidden;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all .4s ease;
+    background: linear-gradient(354deg, black 0%, transparent 72%);
+    color: white;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    bottom: 5rem;
+}
+
+.active .text-container {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+}

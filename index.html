@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Corentin Hanscotte</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="dist/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="dark:bg-stone-900">
+
+<!--NAVBAR-->
+<nav class="fixed left-0 right-0 p-5 shadow md:flex md:items-center md:justify-between bg-white">
+    <div class="flex justify-between items-center">
+        <span class="text-xl dark:text-stone-900 font-bold">
+            Corentin HANSCOTTE
+        </span>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden ">
+<ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        </span>
+    </div>
+
+    <ul class="text-black md:flex md:items-center z-[-1] md:z-auto md:static bg-white w-full absolute left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px]"
+        id="nav-list">
+        <li class="mx-4 my-6 md:my-0">
+            <a class="text-xl hover:text-gray-400 duration-500 text-stone-900" href="#resume">CV</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a class="text-xl hover:text-gray-400 duration-500 text-stone-900" href="#projets">Projets</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a class="text-xl hover:text-gray-400 duration-500 text-stone-900" href="#contact">Contact</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a class="text-xl hover:text-gray-400 duration-500 text-stone-900" href="#competences">Langages</a>
+        </li>
+        <li>
+            <img class="w-10 mx-4 my-6 md:my-0 pointer-events-auto cursor-pointer" onclick="switchDark()"
+                 src="images/brightness.png">
+        </li>
+    </ul>
+</nav>
+
+<section class="main px-10">
+
+    <div class="presentation pt-40 inline-block">
+        <h1 class="text-stone-900 dark:text-white text-5xl font-bold mb-4 border-r-8 dark:border-r-amber-50"
+            id="presentation__titre">
+            Développeur Web.</h1>
+        <p class="text-stone-900 dark:text-white text-3xl" id="bienvenue">Bienvenue sur mon portfolio!</p>
+        <p class="text-stone-900 dark:text-white"><!--Codeur en herbe--></p>
+    </div>
+
+
+    <!--PROJECTS-->
+    <div class="projets mt-32" id="projets">
+
+        <div class="title">
+            <h2 class="text-stone-900 dark:text-white text-4xl font-bold my-10">Mes projets</h2>
+        </div>
+
+        <div class="projets__screens">
+            <div class="image active" style="background: url(images/Framework_CSS_2.png) center/cover;">
+                <a class="block" href="https://github.com/HCorentin/Framework-CSS-"></a>
+
+                <div class="text-container">
+                    <div class="text">
+                        <h3 class="font-bold text-4xl">Framework CSS</h3>
+                        <p class="text-stone-50">L'objectif était de reproduire une partie des fonctionnalités
+                            présentes dans le framework Bootstrap.</p>
+                        <a class="bg-blue-600 rounded-lg mt-4 px-6 py-2 absolute hover:bg-blue-700 active:bg-blue-800 text-center"
+                           href="https://github.com/HCorentin/Framework-CSS-">Voir
+                            le
+                            projet sur
+                            Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image" style="background: url(images/cssgenscreen.png) center/cover;">
+                <div class="text-container">
+                    <div class="text">
+                        <h3 class="font-bold text-4xl">CSS generator</h3>
+                        <p class="text-stone-50">Développement d'un programme en PHP qui concatène toutes les images
+                            d'un
+                            dossier en un seul sprite, et le fichier CSS représentant cette concaténation.</p>
+                        <a class="bg-blue-600 rounded-lg mt-4 px-6 py-2 absolute hover:bg-blue-700 active:bg-blue-800 text-center"
+                           href="https://github.com/HCorentin/CSS-sprite-generator">Voir
+                            le
+                            projet sur
+                            Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image" style="background: url(images/twitter.png) center/cover;">
+                <div class="text-container">
+                    <div class="text">
+                        <h3 class="font-bold text-4xl">Tweet Académie</h3>
+                        <p class="text-stone-50">Reproduction du fameux réseau social.</p>
+                        <a class="bg-blue-600 rounded-lg mt-4 px-6 py-2 absolute hover:bg-blue-700 active:bg-blue-800 text-center"
+                           href="https://github.com/HCorentin/twitter-reproduction">Voir
+                            le
+                            projet sur
+                            Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image" style="background: url(images/morpion.png) center/cover;">
+                <div class="text-container">
+                    <div class="text">
+                        <h3 class="font-bold text-4xl">Morpion</h3>
+                        <p class="text-stone-50">Développement d'un jeu de morpion en JQuery.</p>
+                        <a class="bg-blue-600 rounded-lg mt-4 px-6 py-2 absolute hover:bg-blue-700 active:bg-blue-800 text-center"
+                           href="https://github.com/HCorentin/Morpion">Voir
+                            le
+                            projet sur
+                            Github</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--ABOUT-->
+    <div class="presentation mt-32">
+        <h2 class="text-stone-900 dark:text-white text-4xl font-bold my-10">À propos de moi</h2>
+        <div class="flex grid grid-cols-2 place-items-center">
+            <p class="text-stone-900 dark:text-white">Bonjour! Je m'appelle Corentin HANSCOTTE, je suis développeur web
+                et
+                actuellement étudiant à Epitech. Après 5 années passées en restauration, j'ai
+                décidé de m'assoir et d'orienter mon projet professionnel vers le domaine de l'informatique qui m'a
+                toujours plu. En
+                novembre 2021, j'ai intégré Epitech à Lille pour suivre une formation de 2 ans en développement web,
+                dont un an en alternance. Pendant cette période d'un an en entreprise, je souhaite prendre en
+                compétences et découvrir encore plus de choses!</p>
+            <img class="justify-center rounded-full" src="images/klancaster577452311623266f9.png">
+        </div>
+    </div>
+
+    <div class="reseaux flex space-x-4 text-lg dark:text-white mt-6">
+        <a href="mailto:corentin.hanscotte@epitech.eu">
+            <ion-icon class="hover:text-blue-600 cursor-pointer" name="mail" size="large"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/corentin-hanscotte/">
+            <ion-icon class="hover:text-blue-600 cursor-pointer" name="logo-linkedin" size="large"></ion-icon>
+        </a>
+        <a href="https://github.com/HCorentin">
+            <ion-icon class="hover:text-blue-600 cursor-pointer" name="logo-github" size="large"></ion-icon>
+        </a>
+    </div>
+
+    <div class="emploi my-5">
+        <p class="text-stone-900 dark:text-white font-bold text-center">En recherche d'alternance à partir de Septembre
+            2022</p>
+    </div>
+
+    <div class="resume my-5 flex justify-center" id="resume">
+        <button class="bg-blue-600 text-sm rounded-lg py-2 px-10 hover:bg-blue-700 active:bg-blue-800"
+                type="button"><a
+                class="text-white"
+                href="http://localhost/CV_hanscotte_corentin.pdf">Téléchargez
+            mon CV!</a></button>
+    </div>
+
+    <div class="competences my-5 mt-32 text-center" id="competences">
+        <p class="text-stone-900 dark:text-white text-xl mb-4 text-center">Les technologies que j'utilise</p>
+        <div class="dark:bg-stone-800 bg-stone-50 rounded-xl inline-block text-center p-5">
+            <ion-icon class="text-orange-600 text-4xl bg-stone-100 dark:bg-stone-700 rounded-full p-5"
+                      name="logo-html5"></ion-icon>
+            <ion-icon class="text-blue-700 text-4xl bg-stone-100 dark:bg-stone-700 rounded-full p-5"
+                      name="logo-css3"></ion-icon>
+            <ion-icon class="text-yellow-400 text-4xl bg-stone-100 dark:bg-stone-700 rounded-full p-5"
+                      name="logo-javascript"></ion-icon>
+            <ion-icon class="text-blue-400 text-7xl bg-stone-100 dark:bg-stone-700 rounded-full p-5" name="logo-react"
+                      size="large"></ion-icon>
+            <ion-icon class="text-green-800 text-7xl bg-stone-100 dark:bg-stone-700 rounded-full p-5" name="logo-nodejs"
+                      size="large"></ion-icon>
+
+            <div class="flex pt-4">
+                <img alt="logo mongodb" class="bg-stone-100 dark:bg-stone-700 rounded-full p-6 w-20"
+                     src="images/mongodb.png">
+                <img alt="logo php" class="bg-stone-100 dark:bg-stone-700 rounded-full p-6 w-20" src="images/php.png">
+                <img alt="logo php" class="bg-stone-100 dark:bg-stone-700 rounded-full p-6 w-20" src="images/mysql.png">
+                <img alt="logo symfony"
+                     class="bg-stone-100 dark:bg-stone-700 rounded-full p-6 w-20"
+                     src="images/symfony.png">
+                <img alt="logo laravel"
+                     class="bg-stone-100 dark:bg-stone-700 rounded-full p-6 w-20"
+                     src="images/laravel.png">
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACT-->
+    <div class="contact" id="contact">
+        <h2 class="text-stone-900 dark:text-white text-4xl font-bold my-10">Contact</h2>
+        <div class="bg-stone-50 dark:bg-stone-800 rounded-xl shadow-lg p-8 md:mx-72">
+            <form action="mailto:corentin.hanscotte@epitech.eu"
+                  class="text-stone-900 dark:text-white flex flex-col space-y-4" method="post">
+                <div>
+                    <label class="text-sm" for="">Mail</label>
+                    <input class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-600"
+                           placeholder="Mail" type="email">
+
+                </div>
+                <div>
+                    <label class="text-sm" for="">Sujet</label>
+                    <input class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-600"
+                           placeholder="Sujet" type="text">
+
+                </div>
+                <div>
+                    <label class="text-sm" for="message">Message</label>
+                    <textarea
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-600"
+                            id="message"
+                            placeholder="Votre message" rows="4" type="text"></textarea>
+                </div>
+                <button class="inline-block self-end bg-blue-600 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"
+                        type="submit">Envoyer
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer class="items-center justify-between text-stone-500 bg-stone-200 py-10 px-10 mt-32 flex"><p class="text-sm">
+    Portfolio réalisé
+    par <span
+        class="text-stone-900">Corentin Hanscotte</span>
+</p>
+    <div class="reseaux space-x-4 text-lg text-stone-900">
+        <a href="mailto:corentin.hanscotte@epitech.eu">
+            <ion-icon class="hover:text-blue-600 cursor-pointer" name="mail" size="large"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/corentin-hanscotte/">
+            <ion-icon class="hover:text-blue-600 cursor-pointer" name="logo-linkedin" size="large"></ion-icon>
+        </a>
+        <a href="https://github.com/HCorentin">
+            <ion-icon class="hover:text-blue-600 cursor-pointer" name="logo-github" size="large"></ion-icon>
+        </a>
+    </div>
+</footer>
+
+<script src="assets/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
