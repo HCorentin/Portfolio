@@ -26,7 +26,7 @@ body {
 
 @keyframes animated-cursor {
     from {
-        border-right-color: black;
+        border-right-color: white;
     }
     to {
         border-right-color: transparent;
