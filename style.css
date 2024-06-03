@@ -9,7 +9,12 @@ body {
     overflow: hidden;
     white-space: nowrap;
     animation: animated-text 4s steps(29, end) 1 normal both,
-    animated-cursor 600ms steps(29, end) infinite;
+    animated-cursor-light 600ms steps(29, end) infinite;
+}
+
+.dark #presentation__titre {
+    animation: animated-text 4s steps(29, end) 1 normal both,
+               animated-cursor-dark 600ms steps(29, end) infinite;
 }
 
 /* text animation */
@@ -25,7 +30,17 @@ body {
 
 /* cursor animations */
 
-@keyframes animated-cursor {
+
+@keyframes animated-cursor-light {
+    from {
+        border-right-color: black; /* Change to black for light mode */
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes animated-cursor-dark {
     from {
         border-right-color: white;
     }
