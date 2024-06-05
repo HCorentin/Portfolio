@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.mask-rounded-full {
-    mask-image: radial-gradient(circle, white 100%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
-}
-
