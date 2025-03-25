@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/EpitechWebAcademiePromo2023/W-WEB-502-LIL-2-1-Portfolio-corentin.hanscotte#readme",
   "devDependencies": {
-    "tailwindcss": "^3.4.4"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }
