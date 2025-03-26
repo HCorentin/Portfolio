@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 html, body {
   overflow-x: hidden;
@@ -40,7 +40,7 @@ body {
       width: 0;
   }
   to {
-      width: 472px;
+      width: 100%;
   }
 }
 
