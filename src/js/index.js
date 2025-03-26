@@ -6,8 +6,19 @@ $(".image").click(function () {
 
 /*DARK MODE*/
 function switchDark() {
-    let htmlClassName = document.querySelector('html').className;
-    document.querySelector('html').className = htmlClassName === 'dark' ? '' : 'dark';
+    const html = document.documentElement;
+    const icon = document.querySelector('.icon');
+
+    html.classList.toggle('dark');
+
+    if(html.classList.contains('dark')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+    else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    }
 }
 
 /*MENU*/
