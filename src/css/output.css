@@ -10,6 +10,8 @@
     --color-amber-50: oklch(0.987 0.022 95.277);
     --color-yellow-400: oklch(0.852 0.199 91.936);
     --color-green-800: oklch(0.448 0.119 151.328);
+    --color-sky-600: oklch(0.588 0.158 241.966);
+    --color-sky-900: oklch(0.391 0.09 240.876);
     --color-sky-950: oklch(0.293 0.066 243.157);
     --color-blue-400: oklch(0.707 0.165 254.624);
     --color-blue-600: oklch(0.546 0.245 262.881);
@@ -21,6 +23,7 @@
     --color-stone-100: oklch(0.97 0.001 106.424);
     --color-stone-200: oklch(0.923 0.003 48.717);
     --color-stone-500: oklch(0.553 0.013 58.071);
+    --color-stone-600: oklch(0.444 0.011 73.639);
     --color-stone-700: oklch(0.374 0.01 67.558);
     --color-stone-800: oklch(0.268 0.007 34.298);
     --color-stone-900: oklch(0.216 0.006 56.043);
@@ -239,6 +242,12 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .my-14 {
+    margin-block: calc(var(--spacing) * 14);
+  }
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -251,8 +260,20 @@
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-7 {
+    margin-bottom: calc(var(--spacing) * 7);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .block {
     display: block;
@@ -329,6 +350,18 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -342,12 +375,27 @@
       margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .gap-x-1 {
+    column-gap: calc(var(--spacing) * 1);
+  }
+  .gap-x-2 {
+    column-gap: calc(var(--spacing) * 2);
+  }
   .space-x-4 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
+  }
+  .gap-y-10 {
+    row-gap: calc(var(--spacing) * 10);
   }
   .self-end {
     align-self: flex-end;
@@ -378,6 +426,12 @@
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
+  .bg-sky-600 {
+    background-color: var(--color-sky-600);
+  }
+  .bg-sky-950 {
+    background-color: var(--color-sky-950);
+  }
   .bg-stone-50 {
     background-color: var(--color-stone-50);
   }
@@ -387,6 +441,9 @@
   .bg-stone-200 {
     background-color: var(--color-stone-200);
   }
+  .bg-stone-600 {
+    background-color: var(--color-stone-600);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -395,6 +452,15 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-14 {
+    padding: calc(var(--spacing) * 14);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -416,6 +482,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -584,6 +653,16 @@
       margin-inline: calc(var(--spacing) * 2);
     }
   }
+  .sm\:mb-0 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
   .sm\:grid-cols-3 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -721,6 +800,11 @@
   .dark\:border-r-amber-50 {
     &:where(.dark, .dark *) {
       border-right-color: var(--color-amber-50);
+    }
+  }
+  .dark\:bg-sky-900 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-sky-900);
     }
   }
   .dark\:bg-sky-950 {
