@@ -118,3 +118,15 @@ body {
   transform: translateY(0px);
   opacity: 1;
 }
+
+.menu-open {
+  top: 80px;
+  opacity: 1;
+  position: static;
+}
+
+.menu-closed {
+  top: -400px;
+  opacity: 0;
+  position: absolute;
+}

@@ -23,6 +23,16 @@ function switchDark() {
 
 /*MENU*/
 function Menu(e) {
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.remove('absolute')) : (e.name = "menu" , list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'), list.classList.add('absolute'))
+    const list = document.getElementById('nav-list');
+
+    // Vérifie si l'icône a la classe `fa-bars`
+    const isMenuOpen = e.classList.contains('fa-bars');
+
+    // Basculer les classes de l'icône
+    e.classList.toggle('fa-bars', !isMenuOpen);
+    e.classList.toggle('fa-times', isMenuOpen);
+
+    // Basculer les classes du menu
+    list.classList.toggle('menu-open', isMenuOpen);
+    list.classList.toggle('menu-closed', !isMenuOpen);
 }
