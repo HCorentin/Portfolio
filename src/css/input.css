@@ -9,12 +9,6 @@ html, body {
   box-sizing: border-box;
 }
 
-.mask-rounded-full {
-    mask-image: radial-gradient(circle, white 100%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
-}
-
-
 body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -65,12 +59,6 @@ body {
   }
 }
 
-.projets__screens {
-  min-width: 600px;
-  max-width: 900px;
-  height: 400px;
-  margin: 4rem auto;
-}
 
 .image {
   min-width: 60px;
